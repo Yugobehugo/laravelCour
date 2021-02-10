@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\WebsiteController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\PostController;
 
 /*
 |--------------------------------------------------------------------------
@@ -20,3 +21,7 @@ use Illuminate\Support\Facades\Route;
 
 
 Route::get('/', [WebsiteController::class, 'index']);
+
+Route::get('/album', [WebsiteController::class, 'album']);
+
+Route::resource('/post', PostController::class);

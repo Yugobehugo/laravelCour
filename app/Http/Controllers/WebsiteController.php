@@ -12,4 +12,9 @@ class WebsiteController extends Controller
     {
         return view('homepage');
     }
+
+    public function album(): View
+    {
+        return view('homepage');
+    }
 }
