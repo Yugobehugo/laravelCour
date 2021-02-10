@@ -25,3 +25,7 @@ Route::get('/', [WebsiteController::class, 'index']);
 Route::get('/album', [WebsiteController::class, 'album']);
 
 Route::resource('/post', PostController::class);
+
+Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
+    return view('dashboard');
+})->name('dashboard');

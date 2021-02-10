@@ -10,7 +10,7 @@ class WebsiteController extends Controller
 {
     public function index(): View
     {
-        return view('homepage');
+        return view('album');
     }
 
     public function album(): View

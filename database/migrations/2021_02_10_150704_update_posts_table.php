@@ -21,7 +21,7 @@ class UpdatePostsTable extends Migration
             $table->datetime('publication_date');
             $table->boolean('published');
 
-            $table->foreingId('user_id')->constrained('users');
+            $table->foreignId('user_id')->constrained('users');
         });
     }
 
